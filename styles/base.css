@@ -3,8 +3,9 @@
     --secondary-color: #B0C9E1; 
     --accent1-color: #000; 
     --accent2-color: #18394D; 
-    --font-family-heading: 'Poppins', sans-serif; 
-    --font-family-body: 'Roboto', sans-serif; 
+    --font-family: "Poppins", sans-serif;
+    --font-weight: 400;
+    --font-style: normal;  
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
