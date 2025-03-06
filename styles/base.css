@@ -1,10 +1,10 @@
 :root {
-    --primary-color:  #18394D; /* Light off-white */
-    --secondary-color: #B0C9E1; /* Muted brown */
-    --accent1-color: #000; /* Soft blue */
-    --accent2-color: #18394D; /* Dark blue */
-    --font-family-heading: 'Poppins', sans-serif; /* Heading font */
-    --font-family-body: 'Roboto', sans-serif; /* Body font */
+    --primary-color:  #18394D; 
+    --secondary-color: #B0C9E1; 
+    --accent1-color: #000; 
+    --accent2-color: #18394D; 
+    --font-family-heading: 'Poppins', sans-serif; 
+    --font-family-body: 'Roboto', sans-serif; 
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -51,14 +51,13 @@ aside {
 }
 nav a:hover {
 	text-decoration: overline;
-    text-decoration-color: #18394D
+    text-decoration-color: #18394D;
 }
 
 .active {
 	color: yellow;
 }
 
-/* larger/wider views **************************/
 @media (min-width: 640px) {
 	nav ul {
 		display: flex;
@@ -69,46 +68,45 @@ nav a:hover {
 	}
 }
 footer {
-    background-color: var(--accent2-color); /* Dark blue footer */
+    background-color: var(--accent2-color); 
     color: white;
     padding: 1rem;
     text-align: center;
 }
 
-/* Example section styling */
 section {
     padding: 2rem;
-    background-color: #B0C9E1; /* Soft blue background for sections */
+    background-color: #B0C9E1;
     border-radius: 8px;
     margin-bottom: 2rem;
 }
 
 .card-container {
-    display: flex; /* Enables Flexbox */
-    flex-wrap: wrap; /* Allows cards to wrap if the screen is too small */
-    gap: 1.5rem; /* Adds space between cards */
-    justify-content: center; /* Centers the cards horizontally */
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 1.5rem; 
+    justify-content: center; 
 }
 
 .card {
     background-color: white;
-    border: 1px solid #B0C9E1; /* Border using soft blue */
+    border: 1px solid #B0C9E1;
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    width: calc(30.20% - 1rem); /* Each card takes 1/3 of the container width, with space between */
+    width: calc(30.20% - 1rem); 
     box-sizing: border-box;
 }
 
 .card h2 {
     color: #B0C9E1;
     text-align: center;
-    background-color: #18394D; /* Dark blue for card headings */
+    background-color: #18394D; 
     margin: 0 auto;
 	max-width: 800px;
     padding: 0.5rem;
-    border-radius: 5px; /* Rounded corners for the heading */
-    margin-bottom: 1rem; /* Space below the heading */
+    border-radius: 5px; 
+    margin-bottom: 1rem; 
 }
 .card h3 {
     color: #18394D;
@@ -118,19 +116,19 @@ section {
     padding: 0.5rem;
     margin-bottom: 1rem; 
     margin-top: 15px;
-    border-top: 1px solid #000;/* Space below the heading */
+    border-top: 1px solid #000;
 }
 .card p {
-    color: #000; /* Black for card text */
+    color: #000; 
     text-align: left;
 }
 
 .card-img {
     width: 40%;
-    height: auto; /* Maintain the image's aspect ratio */
-    border-radius: 5px; /* Rounded corners for the image */
-    margin-bottom: 1rem; /* Space below the image */
-    object-fit: cover; /* Ensure the image covers the area without distortion */
+    height: auto; 
+    border-radius: 5px; 
+    margin-bottom: 1rem; 
+    object-fit: cover; 
 }
 .card a {
     display: block;
