@@ -1,17 +1,17 @@
-
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = "Last modified: " + document.lastModified;
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const nav = document.querySelector('nav');
-    const hamburger = document.createElement('button');
-    hamburger.textContent = '☰';
-    hamburger.classList.add('hamburger');
-    document.body.insertBefore(hamburger, document.body.firstChild);
+hamburgerIcon.addEventListener('click', () => {
+    navMenu.classList.toggle('active'); // Toggle the 'active' class to show/hide the menu
 
-    hamburger.addEventListener('click', function() {
-        nav.classList.toggle('active');
-        hamburger.textContent = nav.classList.contains('active') ? '×' : '☰';
-    });
+    // Toggle the 'X' icon when the menu is open
+    if (navMenu.classList.contains('active')) {
+        hamburgerIcon.innerHTML = 'X'; // Change to 'X' when menu is open
+        hamburgerIcon.classList.add('close'); // Add 'close' class for bigger 'X'
+    } else {
+        hamburgerIcon.innerHTML = '&#9776;'; // Change back to hamburger icon
+        hamburgerIcon.classList.remove('close'); // Remove the 'close' class
+    }
 });
+
