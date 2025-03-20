@@ -17,7 +17,7 @@ header {
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 header h1 {
