@@ -1,7 +1,7 @@
 /* Root Variables */
 :root {
     --primary-color: #123456; /* Dark blue color */
-    --secondary-color: rgba(254, 19, 109, 0.732); /* Magenta color */
+    --secondary-color: rgba(135, 22, 65, 0.934); /* Magenta color */
     --background-color: rgb(65, 127, 65);
     --text-color: #333333;
     --footer-color: #123456; /* Same color as header */
