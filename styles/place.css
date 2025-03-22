@@ -108,6 +108,11 @@ header .header-container picture img {
 #weather h2 {
     font-weight: bold;
 } 
+.emoticon::before {
+    content: "⛅ ";  
+    font-size: 1.5em; 
+}
+
 
 
 footer {
@@ -120,7 +125,7 @@ footer {
 
 @media screen and (max-width: 600px) {
    
-    #weather #weather-icon {
+    #weather h2 .emoticon::before {
         display: none; 
     }
 
@@ -205,7 +210,8 @@ footer {
     }
 
     
-    #weather #weather-icon {
-        display: inline; 
+    #weather h2 .emoticon::before {
+        content: "⛅ ";  
+        font-size: 1.5em; 
     }
 }
