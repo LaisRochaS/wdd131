@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kids' Math Learning</title>
+  <script defer src="scripts/math.js"></script>
+  <link rel="stylesheet" href="styles/math.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Welcome to Kids' Math Learning!</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="lessons.html">Lessons</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="practice.html">Practice</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <h2>Learn Math the Fun Way!</h2>
+    <p>Welcome to our Math Learning Website, where we make math fun, interactive, and easy to understand. Here, you can play exciting games, watch lessons, and practice your math skills!</p>
+    <p>Click the buttons below to start your math adventure:</p>
+    <div class="button-container">
+      <button id="startMathChallenge">Start a Math Challenge</button>
+      <button><a href="games.html">Play Math Games</a></button>
+    </div>
+  </section>
+
+  <section class="math-challenge">
+    <h3>Try this quick Math Challenge!</h3>
+    <p id="math-question">What is 5 + 3?</p>
+    <div class="answer-buttons">
+      <button class="answer" onclick="checkAnswer(8)">8</button>
+      <button class="answer" onclick="checkAnswer(7)">7</button>
+      <button class="answer" onclick="checkAnswer(9)">9</button>
+    </div>
+    <p id="result"></p>
+  </section>
+
+  <footer>
+    <p>Created by Kids' Math Learning Team</p>
+    <p><a href="reference.html">References</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

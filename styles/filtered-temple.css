@@ -1,3 +1,13 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
 header {
     background-color: #18394D;
     color: #fff;
@@ -14,7 +24,7 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 1.5em;
 }
 
 nav {
@@ -45,48 +55,60 @@ main {
 }
 
 .gallery {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 25px;
     width: 100%;
 }
 
 figure {
-    margin: 20px;
+    position: relative;
+    margin: 0;
     display: block;
     width: 100%;
+    border-radius: 0px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+figcaption {
+    margin-bottom: 10px;
+    color: #18394D;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 figure img {
     width: 100%;
     height: auto;
     display: block;
-    border: 2px solid #ccc;
-    border-radius: 10px;
     object-fit: cover;
-    position: flex;
+    border: none;
 }
 
-figcaption {
-    margin-top: 10px;
-    font-weight: bold;
+p {
+    color: #242121;
+    font-size: 0.9em;
+    margin-bottom: 10px;
 }
 
 
 footer {
     background-color: #18394D;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     padding: 20px;
     position: relative;
     bottom: 0;
     width: 100%;
 }
-
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+footer p {
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    bottom: 0;
 }
 
 /* Navigation Bar */
@@ -117,7 +139,7 @@ footer {
     display: none;
     cursor: pointer;
     font-size: 30px;
-    color: white;
+    color: rgb(236, 233, 245);
 }
 
 /* Mobile View */
@@ -145,7 +167,6 @@ footer {
         display: block;
     }
 
-    /* Style the 'X' to close */
     .hamburger.close {
         font-size: 35px;
     }

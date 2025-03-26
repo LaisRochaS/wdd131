@@ -143,10 +143,14 @@ footer {
 
     .hamburger {
         display: block;
+        background-color: var(--primary-color);
     }
 
     /* Style the 'X' to close */
     .hamburger.close {
         font-size: 35px;
+        background-color: var(--primary-color);
     }
 }
+
+
