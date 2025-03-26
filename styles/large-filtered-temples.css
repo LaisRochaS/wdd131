@@ -63,7 +63,7 @@ figure img {
     border: 2px solid #ccc;
     border-radius: 10px;
     object-fit: cover;
-    position: flex;
+    position: relative;
 }
 
 figcaption {
