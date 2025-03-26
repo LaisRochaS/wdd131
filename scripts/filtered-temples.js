@@ -66,7 +66,29 @@ const temples = [
         dedicated: "1983, December, 2",
         area: 116642,
         imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    },
+    {
+        templeName: "Salt Lake Utah",
+        location: "Salt Lake City, Utah, United States",
+        dedicated: "1893, May, 6",
+        area: 100820,
+        imageUrl: "https://www.churchofjesuschrist.org/imgs/bb20ac26429ab0478980168fbcac032c25dfb3d9/full/1920%2C/0/default"
+    },
+    {
+        templeName: "London England",
+        location: "London, England, United Kingdom",
+        dedicated: "1958, September, 7",
+        area: 13000,
+        imageUrl: "https://www.churchofjesuschrist.org/imgs/37e3bd39b5f7a4e4af1f45d3d9b785d6e614c0fa/full/1920%2C/0/default"
+    },
+    {
+        templeName: "Sao Paulo Brazil",
+        location: "Sao Paulo, Brazil",
+        dedicated: "1978, October, 23",
+        area: 16953,
+        imageUrl: "https://www.churchofjesuschrist.org/imgs/43bc3d5ccf08d18c729b6b64777207cf5b102ae8/full/1920%2C/0/default"
     }
+    
 ];
 
 // Function to create temple cards
