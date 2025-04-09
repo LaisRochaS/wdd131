@@ -6,48 +6,73 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f4f8fb;
+  background-color: #f4f4f9;
   color: #000;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
- 
 }
+
 header {
-  background-color: #4CAF50;
+  background-color: rgb(122, 31, 122);
   padding: 20px;
   text-align: center;
 }
 header img {
   max-width: 150px;
 }
+header h1 {
+  color: white;
+}
+
 nav ul {
-  list-style-type: none;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
   padding: 0;
 }
 nav ul li {
-  display: inline;
   margin: 0 15px;
 }
 nav ul li a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
   font-size: 18px;
 }
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
 .intro {
   text-align: center;
-  padding: 40px;
+  padding: 30px;
+  background-color: #ffeb3b;
+  border-radius: 10px;
+  margin: 20px 0;
 }
-.intro h1 {
-  font-size: 36px;
-  color: #000;
+.intro h1, .intro h2 {
+  font-size: 2em;
 }
 .intro p {
-  font-size: 20px;
-  color: #000;
-  line-height: 1.6;
+  font-size: 1.2em;
+  margin: 10px 0;
 }
+
+.button-container {
+  margin-top: 20px;
+}
+button {
+  background-color: #ffcc00;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #ff9900;
+}
+
 .features {
   display: flex;
   justify-content: space-around;
@@ -67,38 +92,6 @@ nav ul li a {
   margin-bottom: 20px;
 }
 
-header {
-  background-color: rgb(122, 31, 122);
-  padding: 10px;
-  text-align: center;
-}
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f9;
-}
-header {
-  background-color: rgb(122, 31, 122);
-  padding: 20px;
-  text-align: center;
-}
-header img {
-  max-width: 150px;
-}
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-nav ul li {
-  display: inline;
-  margin: 0 15px;
-}
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
 .contact-form {
   max-width: 600px;
   margin: 40px auto;
@@ -112,7 +105,8 @@ nav ul li a {
   font-size: 32px;
   color: #333;
 }
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
@@ -134,9 +128,6 @@ nav ul li a {
   background-color: #45a049;
 }
 
-header h1 {
-  color: white;
-}
 .games h1 {
   font-size: 2em;
   margin-bottom: 20px;
@@ -147,6 +138,7 @@ header h1 {
   margin-bottom: 20px;
   text-align: center;
 }
+
 .bingo-grid {
   display: grid;
   justify-content: center;
@@ -183,62 +175,6 @@ header h1 {
   margin-top: 20px;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  color: #ffcc00;
-}
-
-.intro {
-  text-align: center;
-  padding: 30px;
-  background-color: #ffeb3b;
-  border-radius: 10px;
-  margin: 20px 0;
-}
-
-.intro h2 {
-  font-size: 2em;
-}
-
-.intro p {
-  font-size: 1.2em;
-  margin: 10px 0;
-}
-
-.button-container {
-  margin-top: 20px;
-}
-
-button {
-  background-color: #ffcc00;
-  padding: 15px 30px;
-  font-size: 1.2em;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #ff9900;
-}
-
 .math-challenge {
   text-align: center;
   margin-top: 40px;
@@ -246,11 +182,9 @@ button:hover {
   background-color: #ffffff;
   border-radius: 10px;
 }
-
 .math-challenge h3 {
   font-size: 1.8em;
 }
-
 .answer-buttons button {
   padding: 15px 30px;
   margin: 10px;
@@ -261,21 +195,10 @@ button:hover {
   cursor: pointer;
   border-radius: 5px;
 }
-
 .answer-buttons button:hover {
   background-color: #45a049;
 }
 
-footer {
-  background-color: rgb(122, 31, 122);
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
-
-footer a:hover {
-  color: #ffcc00;
-}
 .lesson {
   margin: 20px;
   text-align: center;
@@ -284,6 +207,7 @@ footer a:hover {
   font-size: 18px;
   margin-top: 10px;
 }
+
 .quiz {
   margin-top: 30px;
 }
@@ -306,4 +230,93 @@ footer a:hover {
   margin-top: 20px;
   font-size: 22px;
   font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: rgb(122, 31, 122);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+footer a:hover {
+  color: #ffcc00;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+    display: block;
+  }
+
+  .intro {
+    padding: 20px;
+  }
+
+  .intro h1,
+  .intro h2 {
+    font-size: 1.5em;
+  }
+
+  .intro p {
+    font-size: 1em;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-box {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .contact-form {
+    width: 100%;
+    margin: 20px 0;
+    padding: 15px;
+  }
+
+  .bingo-grid {
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(5, 80px);
+    gap: 8px;
+  }
+
+  .bingo-cell {
+    width: 80px;
+    height: 80px;
+    font-size: 16px;
+  }
+
+  .math-challenge h3 {
+    font-size: 1.4em;
+  }
+
+  .answer-buttons button {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .quiz button,
+  .quiz input {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 15px;
+    font-size: 14px;
+  }
 }
