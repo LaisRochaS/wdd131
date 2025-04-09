@@ -10,46 +10,46 @@
 </head>
 <body>
   <header>
-    <div class="logo">
-      <h1>Welcome to Kids' Math Learning!</h1>
-    </div>
+    <img src="images/logo.png" alt="Kids Math Learning Logo" />
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="math-index.html">Home</a></li>
         <li><a href="lessons.html">Lessons</a></li>
         <li><a href="games.html">Games</a></li>
-        <li><a href="practice.html">Practice</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="intro">
-    <h2>Learn Math the Fun Way!</h2>
-    <p>Welcome to our Math Learning Website, where we make math fun, interactive, and easy to understand. Here, you can play exciting games, watch lessons, and practice your math skills!</p>
-    <p>Click the buttons below to start your math adventure:</p>
-    <div class="button-container">
-      <button id="startMathChallenge">Start a Math Challenge</button>
-      <button><a href="games.html">Play Math Games</a></button>
-    </div>
-  </section>
+  <main>
+    <section class="intro">
+      <h1>Welcome to Kids' Math Learning!</h1>
+      <p>Your fun and interactive place to learn math. Our goal is to make learning math enjoyable for kids with easy-to-follow lessons and engaging games.</p>
+    </section>
 
-  <section class="math-challenge">
-    <h3>Try this quick Math Challenge!</h3>
-    <p id="math-question">What is 5 + 3?</p>
-    <div class="answer-buttons">
-      <button class="answer" onclick="checkAnswer(8)">8</button>
-      <button class="answer" onclick="checkAnswer(7)">7</button>
-      <button class="answer" onclick="checkAnswer(9)">9</button>
-    </div>
-    <p id="result"></p>
-  </section>
+    <section class="features">
+      <div class="feature-box">
+        <img src="images/number.png" alt="Lessons Icon" />
+        <h3>Interactive Lessons</h3>
+        <p>Learn math step-by-step with easy lessons and examples. From addition to multiplication, we've got you covered!</p>
+      </div>
 
+      <div class="feature-box">
+        <img src="images/games.png" alt="Games Icon" />
+        <h3>Fun Math Games</h3>
+        <p>Practice math in a fun way with our interactive games. Improve your skills while having a blast!</p>
+      </div>
+
+      <div class="feature-box">
+        <img src="images/quizzes.png" alt="Quiz Icon" />
+        <h3>Quizzes & Challenges</h3>
+        <p>Test your knowledge with quizzes and math challenges. Track your progress as you level up your math skills!</p>
+      </div>
+    </section>
+  </main>
   <footer>
-    <p>Created by Kids' Math Learning Team</p>
-    <p><a href="reference.html">References</a></p>
-  </footer>
-
-  <script src="script.js"></script>
+    <p>&copy; <span id="currentyear"></span> 🌺 Lais Rocha Watson 🌺 Orlando, Florida</p>
+    <p id="lastModified"></p>
+</footer>
 </body>
 </html>

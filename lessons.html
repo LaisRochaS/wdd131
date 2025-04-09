@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Math Lessons - Kids' Math Learning</title>
+  <script defer src="scripts/math.js"></script>
+  <link rel="stylesheet" href="styles/math.css">
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Kids Math Learning Logo" />
+    <nav>
+      <ul>
+        <li><a href="math-index.html">Home</a></li>
+        <li><a href="lessons.html">Lessons</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h1>Welcome to Kids' Math Lessons!</h1>
+      <p>Your fun and interactive place to learn math. Our goal is to make learning math enjoyable. Are you ready for your first lesson? Please, try our quiz!</p>
+    </section>
+
+    <section class="lesson">
+      <h1>Learning Addition</h1>
+      <p>In this lesson, we will learn how to add numbers together!</p>
+      <p>Addition is when we combine two or more numbers to make a bigger number. For example:</p>
+      <p><strong>2 + 3 = 5</strong></p>
+
+    <div class="quiz">
+      <p><strong>Let's test your knowledge!</strong></p>
+      <p>What is 4 + 5?</p>
+      <input type="number" id="answer" placeholder="Enter your answer" />
+      <button onclick="checkAnswer()">Submit Answer</button>
+
+      <div class="result" id="result"></div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> 🌺 Lais Rocha Watson 🌺 Orlando, Florida</p>
+    <p id="lastModified"></p>
+</footer>
+
+</body>
+</html>
