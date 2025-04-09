@@ -9,12 +9,10 @@ body {
   background-color: #f4f8fb;
   color: #000;
   padding: 20px;
-}
-body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f9;
+ 
 }
 header {
   background-color: #4CAF50;
@@ -68,12 +66,7 @@ nav ul li a {
   max-width: 80px;
   margin-bottom: 20px;
 }
-footer {
-  background-color: rgb(122, 31, 122);
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
+
 header {
   background-color: rgb(122, 31, 122);
   padding: 10px;
@@ -140,12 +133,7 @@ nav ul li a {
 .contact-form button:hover {
   background-color: #45a049;
 }
-footer {
-  background-color: rgb(122, 31, 122);
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
+
 header h1 {
   color: white;
 }
@@ -276,13 +264,6 @@ button:hover {
 
 .answer-buttons button:hover {
   background-color: #45a049;
-}
-
-footer {
-  background-color: rgb(122, 31, 122);
-  color: white;
-  text-align: center;
-  padding: 10px;
 }
 
 footer {
